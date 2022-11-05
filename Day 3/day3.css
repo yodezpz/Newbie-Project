@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+    background-color: #0f2725;
+  }
+  .toggle-button-cover{
+    display: table-cell;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+
+  }
+  .button-cover{
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(236,236,236);
+    box-shadow: 0 10px 20px -8px #97dfdf;
+    border-radius: 4px;
+  }
+  .button-cover, .knobs, .layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .button{
+    position:relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+  }
+  .button.ner, .button.ner .layer{
+    border-radius: 100px;
+  }
+  .checkbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .knobs {
+    z-index: 2;
+  }
+  
+  .layer {
+    width: 100%;
+    background-image:url(1.png);
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  #buttonz {
+  overflow: visible;
+
+  }
+  #buttonz .knobs:before {
+    content: "On";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: rgb(32, 20, 75);
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #e4eaec;
+    border-radius: 50%;
+  }
+  #buttonz .layer, #buttonz .knobs, #buttonz .knobs:before{
+    transform: rotateZ('0');
+    transition: 0.4s cubic-bezier(0.18,0.89,0.35,1.15)all;
+
+  }
+  #buttonz .layer,
+#buttonz .knobs,
+#buttonz .knobs:before {
+  transform: rotateZ(0);
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#buttonz .checkbox:checked + .knobs {
+  transform: rotateZ(-180deg);
+}
+
+#buttonz .checkbox:checked + .knobs:before {
+  content: "Off";
+  background-color: #f8a558;
+  transform: rotateZ(180deg);
+}
+
+#buttonz .checkbox:checked ~ .layer {
+  background-image:url(fire.jpg);
+  transform: rotateZ(180deg);
+}
+  
+
+ 
