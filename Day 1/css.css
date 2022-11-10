@@ -64,11 +64,8 @@ button.submit {
   font-weight: bold;
   background-image: linear-gradient(to right, #0e5469, #bf15e1);
   cursor: grabbing;
-  transition: opacity 0.4s;
+  
 }
 
-button.submit:hover {
-  opacity: 0.9;
-}
 
 
