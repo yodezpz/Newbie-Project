@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device=width", initial-scaled=1.0>
+		<title>Card Hover</title>
+		<link rel="stylesheet" href="day5.css">
+    </head>
+    <body>
+    
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="pepsi.png">
+                        </div>
+                        <div class="contentBox">
+                            <h3>Pepsi<br><span>carbonated soft drink <br/> manufactured by PepsiCo</span></h3>
+                        </div>
+                    </div>
+                    <ul class="name">
+                        
+                        <li>
+                            <a href="">Pepsi.com</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="md.png">
+                        </div>
+                        <div class="contentBox">
+                            <h3>Mountain dew<br><span>Mountain Dew, stylized as Mtn Dew, <br/>is a carbonated soft drink brand produced and owned by PepsiCo.</span></h3>
+                        </div>
+                    </div>
+                    <ul class="name">
+                        
+                        <li>
+                            <a href="">MountainDew.com</a>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="03.png">
+                        </div>
+                        <div class="contentBox">
+                            <h3>Coca Cola<br><span>carbonated soft drink <br/> manufactured by the Coca-Cola Company.</span></h3>
+                        </div>
+                    </div>
+                    <ul class="name">
+                       
+                        <li>
+                            <a href="">Cocacola.com</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        
+    </body>
+</html>
